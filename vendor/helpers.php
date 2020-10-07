@@ -28,5 +28,13 @@ if(!function_exists('assets')){
     }
 }
 
+if(!function_exists('url')){
+    //escape the giving value
+    function url($path){
+        global $app;
+        return $app->url->link($path);
+    }
+}
+
 
 
