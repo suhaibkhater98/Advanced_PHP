@@ -20,3 +20,13 @@ if(!function_exists('_e')){
     }
 }
 
+if(!function_exists('assets')){
+    //escape the giving value
+    function assets($path){
+        global $app;
+        return $app->url->link('public/'. $path);
+    }
+}
+
+
+

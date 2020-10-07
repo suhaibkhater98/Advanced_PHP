@@ -167,7 +167,6 @@ class Database{
          }
 
          $sql = $this->fetchStatment();
-        echo $sql;
          $result = $this->query($sql , $this->bindings)->fetch();
          $this->reset();
          return $result;

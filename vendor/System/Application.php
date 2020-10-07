@@ -61,7 +61,8 @@ class Application{
             'load'    => 'System\\Loader',
             'html'    => 'System\\Html',
             'db'    => 'System\\Database',
-            'view'    => 'System\\View\\ViewFactory'
+            'view'    => 'System\\View\\ViewFactory',
+            'url'     => 'System\\Url',
         ];
     }
     public function get($key){
